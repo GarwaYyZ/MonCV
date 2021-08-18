@@ -1,0 +1,252 @@
+header {
+     background-color: #3f3d4a;
+     display: flex;
+     flex-direction: column
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 75px;
+    padding: 15px;
+    margin: 15px;
+
+
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 95px;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 25px;
+    margin:0 60px;
+}
+
+nav ul li a {
+    color:white;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.link:hover{
+    border-bottom: rgba(78, 153, 238, 0.856) 5px ;
+    text-decoration: none;
+    color: rgba(78, 153, 238, 0.856);
+}
+
+
+h1{
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    color: white;
+    font-size: 5em;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+
+body
+{
+    background-color: #3f3d4a;
+    margin: 0;
+
+}
+
+
+
+*{margin:0}
+
+.slider {
+    overflow: hidden;
+}
+
+.slide {
+    opacity: 0.4;
+}
+
+div.title-box{
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    opacity: 1;
+    z-index:1;
+}
+
+
+
+.slides{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: calc(500px*3);
+    height: 650px center;
+    animation: glisse 25s infinite ease;
+}
+
+
+@keyframes glisse{
+
+    0%{
+        transform: translateX(0);
+    }
+
+
+    50%{
+        transform: translateX(-1250px);
+    }
+
+
+    100%{
+        transform: translateX(-0px);
+    }
+
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.mt20 {
+    margin-top: 45px;
+}
+
+.mx20{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.card {
+    width: 300px;
+    height: 379px;
+    background: black;
+    border-radius: 10px;
+    color: white;
+    font-family: arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 70px 63px -60px black;
+    margin-bottom: 100px;
+    transition: all 0.8s;
+}
+
+.border{
+    height: 369px;
+    width: 290px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.border:hover{
+    border: 2px solid  white;
+}
+.card0{
+    background: url(image/photo_thibault.JPG) center left no-repeat;
+    background-size: 450px;
+}
+
+.card0:hover{
+    background: url(image/photo_thibault.JPG) center right no-repeat;
+    background-size: 500px;
+}
+
+.icons {
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    height: 130px;
+    justify-content: space-around;
+    width: 30px;
+    top: 226px;
+
+}
+
+a{
+    color: white;
+}
+
+.card h2 {
+    margin: 20px;
+    opacity: 0;
+    transition: all 2s;
+}
+
+.card:hover h2 {
+    opacity: 1;
+}
+
+.fab {
+    opacity: 0;
+    transition: all;
+}
+
+.card:hover .fab{
+    opacity: 1;
+}
+
+.card{
+    display: flex;
+}
+
+
+
+.card1{
+    background: url(image/card_poisson.jpg) center left no-repeat;
+    background-size: 570px;
+}
+
+.card2{
+    background: url(image/card_crustacés.jpg) center right no-repeat;
+    background-size: 505px;
+}
+
+.border1{
+    height: 369px;
+    width: 290px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.border1:hover{
+    border: 2px solid  white;
+}
+
+.border2{
+    height: 369px;
+    width: 290px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.border2:hover{
+    border: 2px solid  white;
+}
+
+
